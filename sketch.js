@@ -8,18 +8,7 @@ let raio = diametro / 2 ;
 let velocidadeXBolinha = 3;
 let velocidadeYBolinha = 3;
 
-//sons do jogo
-let raquetada
-let ponto
 
-
-function preload(){
-
-trilha = loadSound("trilha.mp3");
-ponto = loadSound("ponto.mp3");
- raquetada = loadSound("raquetada.mp3");
-
-}
 
 
 //variáveis da raquete
