@@ -1,12 +1,14 @@
 //variáveis da bolinha
 let xBolinha = 300;
-let yBolinha = 200;
+let yBolinha= 200;
 let diametro = 15;
 let raio = diametro / 2 ;
 
 //velocidade da bolinha
 let velocidadeXBolinha = 3;
 let velocidadeYBolinha = 3;
+
+
 
 
 
@@ -29,7 +31,7 @@ let velocidadeYOponente;
 
 function setup() {
   createCanvas(600, 400);
-  trilha.loop()
+  
 }
 
 function draw() {
@@ -100,7 +102,7 @@ function movimentaMinhaRaquete() {
     colidiu = collideRectCircle(x, y, raqueteComprimento, raqueteAltura, xBolinha, yBolinha, raio);
     if (colidiu) {
         velocidadeXBolinha *= -1;
-      raquetada.play()
+      
     }
   }
 
@@ -131,6 +133,6 @@ function marcaPonto() {
     }
     if (xBolinha < 9) {
         pontosDoOponente += 1;
-      ponto.play()
+      
     }
 }
